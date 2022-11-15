@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+   --background: #14161a;
+   --accent-color: rgb(13, 115, 231);
+   --hover-accent-color: #1361b9;
+}
+
+@layer base {
+   @font-face {
+      font-family: 'Raisonne';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('/fonts/raisonne.woff') format('woff'), url('/fonts/raisonne.woff2') format('woff2');
+   }
+
+   ::-webkit-scrollbar {
+      @apply bg-blue-50 dark:bg-primary
+   }
+
+   html, body {
+      @apply overflow-x-hidden
+   }
+
+   html {
+      @apply font-raisonne
+   }
+
+   body {
+      @apply scroll-smooth bg-white dark:bg-primary
+   }
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+   width: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--accent-color);
+   border-radius: 8px;
+   border: 4px solid transparent;
+   background-clip: content-box;
+
+   &:hover {
+       background: var(--hover-accent-color);
+       border-radius: 8px;
+       border: 4px solid transparent;
+       background-clip: content-box;
+   }
+}
+
+html {
+   scrollbar-width: thin;
+   scrollbar-color: var(--accent-color) var(--background);
+}
+/* custom scrollbar */
+
+.burger .burger-lines,
+.burger .burger-lines:after,
+.burger .burger-lines:before {
+   @apply bg-black dark:bg-white h-[0.35em]
+}
+
+@media screen and (max-width: 280px) {
+   .foldIndexTitle {
+      font-size: 3rem;
+   }
+   .foldWorkCard {
+      height: 22rem;
+      margin-left: 0.8rem;
+   }
+   .foldSkillCard {
+      height: 10rem;
+      width: 90%;
+      margin-left: 0.8rem;
+      padding: 1rem;
+   }
+   .foldContactCard {
+      height: 10rem;
+      padding: 0;
+
+      .foldContactIcon {
+         display: none;
+      }
+   }
+   .foldButton {
+      font-size: 1rem;
+   }
+}

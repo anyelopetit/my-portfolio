@@ -1,0 +1,50 @@
+{
+  "name": "portfolio",
+  "version": "2.5.0",
+  "description": "Personal portfolio built with Next.js & TailwindCSS, hosted on Vercel",
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "keywords": [
+    "Anyelo Petit, Fullstack Developer, Ruby on Rails, Web Developer, AnyeloPetit, anyelopetit.vercel.app, portfolio"
+  ],
+  "author": {
+    "name": "Anyelo Petit",
+    "email": "anyelopetit@gmail.com",
+    "url": "https://github.com/anyelopetit"
+  },
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/anyelopetit/portfolio/issues"
+  },
+  "homepage": "https://github.com/anyelopetit/portfolio#readme",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "next build && next-sitemap --config nextSitemap.js",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@animated-burgers/burger-rotate": "^1.1.2",
+    "classnames": "^2.3.2",
+    "framer-motion": "^7.6.1",
+    "next": "12.3.1",
+    "next-sitemap": "^3.1.29",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-animated-cursor": "^2.5.2",
+    "react-dom": "18.2.0",
+    "react-snowfall": "^1.2.1",
+    "sass": "^1.55.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "eslint": "8.25.0",
+    "eslint-config-next": "12.3.1",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.0"
+  }
+}
