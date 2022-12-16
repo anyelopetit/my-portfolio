@@ -9,6 +9,11 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
-}
+  experimental: {
+    images: {
+      layoutRaw: true,
+    },
+  },
+};
 
 module.exports = nextConfig
